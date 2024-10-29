@@ -4,7 +4,8 @@ on:
   push:
     branches:
       - main  # 监控主分支上的变动
-
+permissions:
+    contents: write  # Required to push to gh-pages branch
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
